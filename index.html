@@ -1,0 +1,619 @@
+<head>
+  <title>
+    Merry Christmas!
+  </title>
+  <style>
+    #gridContainer {
+      font-size: 200%;
+      text-indent: 5px;
+      text-shadow: 0px 0px 2px white;
+      width: 720px;
+      height: 540px;
+    }
+
+    #gridOutline {
+      left: 0;
+      top: 0;
+      position: absolute;
+      border: 4px solid black;
+      width: 720px;
+      height: 540px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    #box1 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') 0 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    
+    #box2 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -180px 0;
+      position: absolute;
+      left: 180px;
+      top: 0;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box3 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -360px 0;
+      position: absolute;
+      left: 360px;
+      top: 0px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box4 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -540px 0;
+      position: absolute;
+      left: 540px;
+      top: 0;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    #box5 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') 0 -135px;
+      position: absolute;
+      left: 0;
+      top: 135px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    
+    #box6 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -180px -135px;
+      position: absolute;
+      left: 180px;
+      top: 135px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box7 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -360px -135px;
+      position: absolute;
+      left: 360px;
+      top: 135px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box8 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -540px -135px;
+      position: absolute;
+      left: 540px;
+      top: 135px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    #box9 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') 0 -270px;
+      position: absolute;
+      left: 0;
+      top: 270px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    
+    #box10 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -180px -270px;
+      position: absolute;
+      left: 180px;
+      top: 270px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box11 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -360px -270px;
+      position: absolute;
+      left: 360px;
+      top: 270px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box12 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -540px -270px;
+      position: absolute;
+      left: 540px;
+      top: 270px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    #box13 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') 0 -405px;
+      position: absolute;
+      left: 0;
+      top: 405px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    
+    #box14 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -180px -405px;
+      position: absolute;
+      left: 180px;
+      top: 405px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box15 {
+      width: 180px;
+      height: 135px;
+      background: url('blank.gif') -360px -405px;
+      position: absolute;
+      left: 360px;
+      top: 405px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+    }
+    
+    #box16 {
+      width: 180px;
+      height: 135px;
+      position: absolute;
+      left: 540px;
+      top: 405px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;      
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    #solveButton {
+      background-color: #4CAF50;
+      float: left;
+    }
+
+    #solveButton:hover { background-color: #3e8e41 }
+
+    #solveButton:active { background-color: #3e8e41; }
+
+    #nextButton {
+      background-color: #990000;
+      float: right;
+    }
+
+    #nextButton:hover { background-color: #660000; }
+
+    #nextButton:active { background-color: #660000; }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    var grid = [
+      [1,  2,  3,  4],
+      [5,  6,  7,  8],
+      [9,  10, 11, 12],
+      [13, 14, 15, 16]
+    ];
+
+    var isMoving = false;
+
+    var hasWon = false;
+    var winInterval;
+
+    var boxes = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+
+    var images = ['1.jpg'];
+
+
+    window.requestAnimationFrame = window.requestAnimationFrame
+      || window.mozRequestAnimationFrame
+      || window.webkitRequestAnimationFrame
+      || window.msRequestAnimationFrame
+      || function(f){return setTimeout(f, 1000/60)} // simulate calling code 60 
+ 
+    window.cancelAnimationFrame = window.cancelAnimationFrame
+      || window.mozCancelAnimationFrame
+      || function(requestID){clearTimeout(requestID)} //fall back
+
+
+    // ON LOAD
+    $(document).ready( function() {
+      var i;
+      for (i = 1; i <= 16; i++) {
+        boxes[i] = $("#box" + i);
+      }
+
+      shuffle(images);
+
+      initPuzzle(images[0]);
+    });  
+
+
+    function initPuzzle() {
+	grid = [
+          [1,  2,  3,  4],
+          [5,  6,  7,  8],
+          [9,  10, 11, 12],
+          [13, 14, 15, 16]
+        ];
+
+        isMoving = false;
+        hasWon = false;
+        loadImage(images[0]);
+	updatePositions();
+
+        // Swap 100 times until most things aren't in their default spot (i.e., is chaotic).
+        var i, x, y, direction, foundSwap, chaosCount;
+        var curX = 3, curY = 3, destX, destY;
+        do {
+          for (i = 0; i < 100; i++) {
+            foundSwap = false;
+            while (!foundSwap) {
+              direction = Math.floor(Math.random() * 4);
+            
+              if (direction == 0 && curY > 0) { // FROM ABOVE
+                swapBoxes(curX, curY - 1, curX, curY, false);
+                curY--;
+                foundSwap = true;
+              } else if (direction == 1 && curY < 3) { // FROM BELOW
+                swapBoxes(curX, curY + 1, curX, curY, false);
+                curY++;
+                foundSwap = true;
+              } else if (direction == 2 && curX > 0) { // FROM LEFT
+                swapBoxes(curX - 1, curY, curX, curY, false);
+                curX--;
+                foundSwap = true;
+              } else if (direction == 3 && curX < 3) { // FROM RIGHT
+                swapBoxes(curX + 1, curY, curX, curY, false);
+                curX++;
+                foundSwap = true;
+              }
+            }
+          }
+
+          // Check for chaos
+          chaosCount = 0;
+          i = 1;
+          for (y = 0; y < 4; y++) {
+            for (x = 0; x < 4; x++) {
+              if (grid[y][x] == i) {
+                chaosCount++;
+              }
+              i++;
+            }
+          }
+        } while (chaosCount > 2);
+
+        updatePositions();
+    }
+
+    function tap(box) {
+      if (isMoving || hasWon) {
+        return;
+      }
+
+      // Get current position
+      var x, y;
+      var posX = -1, posY = -1;
+      for (x = 0; x < 4; x++) {
+        for (y = 0; y < 4; y++) {
+          if (grid[y][x] == box) {
+            posX = x;
+            posY = y;
+          }
+        }
+      }
+
+      if (posX == -1 || posY == -1) {
+        return;
+      }
+
+      // up?
+      if (isBox16(posX, posY - 1)) {
+        swapBoxes(posX, posY, posX, posY - 1, true);
+        return;
+      }
+
+      // down?
+      if (isBox16(posX, posY + 1)) {
+        swapBoxes(posX, posY, posX, posY + 1, true);
+        return;
+      }
+
+      // left?
+      if (isBox16(posX - 1, posY)) {
+        swapBoxes(posX, posY, posX - 1, posY, true);
+        return;
+      }
+
+      // right?
+      if (isBox16(posX + 1, posY)) {
+        swapBoxes(posX, posY, posX + 1, posY, true);
+        return;
+      }
+    }
+
+    function isBox16(x, y) {
+      if (x < 0 || x > 3 || y < 0 || y > 3) {
+        return false;
+      } else {
+        return (grid[y][x] == 16); 
+      }
+    }
+
+    function updatePositions() {
+      var x, y, box, style;
+      for (x = 0; x < 4; x++) {
+        for (y = 0; y < 4; y++) {
+          style = 'solid';
+          if (isBox16(x, y - 1) || isBox16(x, y + 1) || isBox16(x - 1, y) || isBox16(x + 1, y)) {
+            style = 'dashed';
+          }
+          box = grid[y][x];
+          boxes[box].css({'left': 180 * x, 'top': 135 * y, 'border-style': style});
+        }
+      } 
+    }
+
+    function loadImage(puzzleImage) {
+      var x, y, box;
+      for (x = 0; x < 4; x++) {
+        for (y = 0; y < 4; y++) {
+          if (x == 3 && y == 3) continue;
+
+          box = grid[y][x];
+          boxes[box].css({"background-image": "url('" + puzzleImage + "')"});
+        }
+      } 
+    }
+
+    function swapBoxes(srcX, srcY, destX, destY, isAnimated) {
+      var box = grid[srcY][srcX];
+      grid[destY][destX] = box;
+      grid[srcY][srcX] = 16;
+
+      if (!isAnimated) {
+        return;
+      }
+
+      // Animate the movement
+      var startX = srcX * 180;
+      var startY = srcY * 135;
+      var endX = destX * 180;
+      var endY = destY * 135;
+
+      requestAnimationFrame(function(timestamp) {
+        animateMovement(timestamp, Date.now(), 75, boxes[box], startX, startY, endX, endY);
+      });
+    }
+
+    function animateMovement(timestamp, startTime, milliDuration, boxObj, startX, startY, endX, endY) {
+      var timestamp = /*timestamp ||*/ Date.now();
+      var progress = (timestamp - startTime) / milliDuration;
+      progress = Math.min(progress, 1);
+      var curX = startX + (endX - startX) * progress;
+      var curY = startY + (endY - startY) * progress;
+      boxObj.css({left: curX, top: curY});
+
+      if (progress < 1) {
+        requestAnimationFrame(function(timestamp) {
+          animateMovement(timestamp, startTime, milliDuration, boxObj, startX, startY, endX, endY);
+        });
+      } else {
+        updatePositions();
+        isMoving = false;
+        checkWinner();
+      }
+    }
+
+    function checkWinner() {
+      var x, y;
+      var i = 1;
+      for (y = 0; y < 4; y++) {
+        for (x = 0; x < 4; x++) {
+          if (grid[y][x] != i) {
+            return;
+          }
+          i++;
+        }
+      }
+
+      // animate the win
+      hasWon = true;
+      boxes[16].css({"background": "url('" + images[0] + "') -540px -405px"});
+      requestAnimationFrame(function(timestamp) {
+        animateWin(timestamp, Date.now(), 1000);
+      });
+    }
+
+    function animateWin(timestamp, startTime, milliDuration) {
+      var timestamp = /*timestamp ||*/ Date.now();
+      var progress = (timestamp - startTime) / milliDuration;
+      progress = Math.min(progress, 1);
+      var alpha = 1 - progress;
+
+      for (i = 1; i <= 16; i++) {
+        boxes[i].css({'border-color': 'rgba(0, 0, 0, ' + alpha + ')', 
+                      'color': 'rgba(0, 0, 0, ' + alpha + ')',
+                      'text-shadow': '0px 0px 2px rgba(255, 255, 255, ' + alpha + ')'});
+      }
+
+      
+
+      if (alpha > 0) {
+        requestAnimationFrame(function(timestamp) {
+          animateWin(timestamp, startTime, milliDuration);
+        });
+      }
+    }
+
+    function resetWinAnimation() {
+      var i;
+      for (i = 1; i <= 16; i++) {
+            boxes[i].css({'border-color': 'rgba(0, 0, 0, 1)',
+                          'color': 'rgba(0, 0, 0, 1)',
+                          'text-shadow': '0px 0px 2px rgba(255, 255, 255, 1)'});
+            boxes[i].html(i);
+      }
+      boxes[16].css({"background-image": "url('blank.gif')"});
+    }
+
+    function shuffle(array) {
+        let counter = array.length;
+
+        // While there are elements in the array
+        while (counter > 0) {
+            // Pick a random index
+            let index = Math.floor(Math.random() * counter);
+
+            // Decrease counter by 1
+            counter--;
+
+            // And swap the last element with it
+            let temp = array[counter];
+            array[counter] = array[index];
+            array[index] = temp;
+        }
+
+        return array;
+    }
+
+    function solve() {
+      if (isMoving || hasWon) return;
+
+      grid = [
+          [1,  2,  3,  4],
+          [5,  6,  7,  8],
+          [9,  10, 11, 12],
+          [13, 14, 15, 16]
+        ];
+        updatePositions();
+        checkWinner();
+    }
+
+    function next() {
+      if (isMoving) return;
+
+      images.push(images.shift());
+      initPuzzle();
+      resetWinAnimation();
+    }
+  </script>
+</head>
+
+<div id="gridContainer">
+  <div id="box1" onmousedown="tap(1)">1</div>
+  <div id="box2" onmousedown="tap(2)">2</div>
+  <div id="box3" onmousedown="tap(3)">3</div>
+  <div id="box4" onmousedown="tap(4)">4</div>
+
+  <div id="box5" onmousedown="tap(5)">5</div>
+  <div id="box6" onmousedown="tap(6)">6</div>
+  <div id="box7" onmousedown="tap(7)">7</div>
+  <div id="box8" onmousedown="tap(8)">8</div>
+
+  <div id="box9" onmousedown="tap(9)">9</div>
+  <div id="box10" onmousedown="tap(10)">10</div>
+  <div id="box11" onmousedown="tap(11)">11</div>
+  <div id="box12" onmousedown="tap(12)">12</div>
+
+  <div id="box13" onmousedown="tap(13)">13</div>
+  <div id="box14" onmousedown="tap(14)">14</div>
+  <div id="box15" onmousedown="tap(15)">15</div>
+  <div id="box16">16</div>
+</div>
+<div style="font-size: 200%; width: 720px;">
+ <div style="width: 50%; margin:auto; padding-top: 50px;">
+  <span id="solveButton" class="button" onmousedown="solve()">Solve</span>
+  <span id="nextButton" class="button" onmousedown="next()">Next</span>
+ </div>
+</div>
